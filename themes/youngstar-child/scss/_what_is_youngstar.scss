@@ -1,0 +1,33 @@
+.main,
+.article {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    margin-top: 2rem;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
+
+    &__heading {
+        color: $red;
+        text-align: center;
+    }
+
+    &__img {
+        width: 10rem;
+
+        &-container {
+            text-align: center;
+        }
+    }
+
+    &__text,
+    &__list {
+        font-size: 18px;
+    }
+
+    &__link {
+        color: $red;
+    }
+}

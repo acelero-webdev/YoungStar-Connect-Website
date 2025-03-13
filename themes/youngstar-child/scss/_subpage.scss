@@ -1,29 +1,29 @@
 .subpage_top {
-  min-height: 300px;
-  padding-bottom: 0;
-  h1 {
-    color: $yellow;
-  }
-  &::after {
-    display: none;
-  }
+    min-height: 200px;
+    padding-bottom: 0;
+    h1 {
+        color: $yellow;
+    }
+    &::after {
+        display: none;
+    }
 }
 
 .partner-grid {
-  .grid-item {
-    > div {
-      box-shadow: 0px 0px 10px #ededed;
-      background-size: contain !important;
-      background-repeat: no-repeat;
-      background-position: center;
-      min-height: 425px !important;
+    .grid-item {
+        > div {
+            box-shadow: 0px 0px 10px #ededed;
+            background-size: contain !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 425px !important;
+        }
     }
-  }
 }
 .partner-grid-top {
-  .grid-item {
-    > div {
-      background-color: #03477f !important;
+    .grid-item {
+        > div {
+            background-color: #03477f !important;
+        }
     }
-  }
 }

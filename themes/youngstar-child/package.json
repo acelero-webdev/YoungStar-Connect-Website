@@ -1,0 +1,13 @@
+{
+    "devDependencies": {
+        "@wordpress/scripts": "^30.12.0",
+        "ajv": "^7.2.4"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    }
+}

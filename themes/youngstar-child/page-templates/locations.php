@@ -2,14 +2,6 @@
 <?php get_header(); ?>
 <?php $banner = get_field('banner'); ?>
 
-
-<style>
-	.heading,
-	.description > p {
-		color: white !important
-	}
-</style>
-
 <div class="container-full homepage_top subpage_top"
     style="background-image: url('<?php echo $banner['background_image']['url']?>');">
     <div class="container">

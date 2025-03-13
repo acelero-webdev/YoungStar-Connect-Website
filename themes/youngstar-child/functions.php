@@ -2,8 +2,10 @@
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     // import scripts and styles
+    // Cache Busting
+    $milliseconds = floor(microtime(true) * 1000);
     wp_enqueue_style('main-css', get_stylesheet_directory_uri().'/css/styles.css?elver=12');
-
+    wp_enqueue_style('build-css', get_theme_file_uri('/build/index.css'), array(), $milliseconds);
 }
 
 

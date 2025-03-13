@@ -166,12 +166,7 @@
 	label strong{
 	font-size: 1.2rem;
 	padding-right: .2rem;
-	}
-
-	.heading,
-	.description > p {
-		color: white !important
-	}
+    }
 
 </style>
 

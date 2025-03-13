@@ -1,13 +1,13 @@
-@import url("https://use.typekit.net/pul5iae.css");
-@import "_mixins";
+@import url('https://use.typekit.net/pul5iae.css');
+@import '_mixins';
 
 $blue: #2263ae;
 $yellow: #ffb400;
 $red: #c9336d;
 
 body {
-  margin: 0;
-  overflow-x: hidden;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h1,
@@ -22,7 +22,7 @@ a,
 button,
 input,
 textarea {
-  font-family: "myriad-pro", sans-serif;
+    font-family: 'myriad-pro', sans-serif;
 }
 
 h1,
@@ -32,66 +32,110 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 
 h1 {
-  font-size: 4.2em;
+    font-size: 4.2em;
 }
 h2 {
-  font-size: 2.3em;
+    font-size: 2.3em;
 }
 h3 {
-  font-size: 1.75em;
+    font-size: 1.75em;
 }
 h4 {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
 .p-0-10 {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media (max-width: 1400px) {
+        padding: 0rem 2rem;
+    }
+
+    @media (max-width: 700px) {
+        padding: 0rem 1rem;
+    }
 }
 .container-full {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1400px) {
+        padding: 0rem 2rem;
+    }
+
+    @media (max-width: 700px) {
+        padding: 0rem 1rem;
+    }
 }
 .container-full .container {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 .row {
-  display: grid;
-  &.row-condensed {
-    max-width: 1000px;
-    margin: 25px auto;
-  }
-  &:not(.row-grid) {
-    &.row-45-55 {
-      grid-template-columns: 45% minmax(0, 1fr);
-      @include for-phone-only {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-      }
+    display: grid;
+    &.row-condensed {
+        max-width: 1000px;
+        margin: 25px auto;
     }
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
-    @include for-phone-only {
-      grid-auto-columns: 100%;
-      grid-auto-flow: initial;
+    &:not(.row-grid) {
+        &.row-45-55 {
+            grid-template-columns: 45% minmax(0, 1fr);
+            @include for-phone-only {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        @include for-phone-only {
+            grid-auto-columns: 100%;
+            grid-auto-flow: initial;
+        }
     }
-  }
-  &.row-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    @include for-phone-only {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
+    &.row-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        @include for-phone-only {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }
-  }
 }
 
-@import "_header";
-@import "_home";
-@import "_subpage";
-@import "_footer";
+.heading {
+    font-size: 3rem;
+    color: white !important;
+
+    @media (min-width: 700px) {
+        font-size: 4rem;
+    }
+
+    @media (min-width: 1000px) {
+        font-size: 5rem;
+    }
+}
+
+.description > p {
+    font-size: 18px !important;
+    color: white !important;
+    padding-bottom: 2rem;
+
+    @media (min-width: 700px) {
+        font-size: 22px !important;
+    }
+
+    @media (min-width: 1000px) {
+        font-size: 26px !important;
+    }
+}
+
+@import '_header';
+@import '_home';
+@import '_subpage';
+@import '_footer';
+@import '_what_is_youngstar';
