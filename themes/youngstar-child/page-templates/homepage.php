@@ -70,45 +70,4 @@
     
 </div>
 
-
-
-
-<?php
-$bottom = get_field('bottom_section');
-if( $bottom ): ?>
-<div class="container-full homepage_bottom">
-    <div class="container">
-        <div class="row row-45-55">
-            <div class="p-0-10">
-                <?php echo $bottom['left_side_content']; ?>
-            </div>
-            <div>
-                <div class="homepage_bottom_grid p-0-10">
-                    <div class="row row-grid">
-                        <?php
-                            $rows = $bottom['grid_content'];
-                            if( $rows ) {
-                                foreach( $rows as $row ) {
-                                    $title = $row['title']; $date = $row['date']; $date2 = date("F j, Y", strtotime($date)); $start = $row['start_time']; $end = $row['end_time']; $location = $row['location']; ?>
-                        <div class="grid-item">
-                            <div>
-                                <div>
-                                    <h4><?php echo $title; ?></h4>
-                                    <h5><?php if($date != ''): echo $date; else: echo 'TBD'; endif; ?></h5>
-                                    <h5><?php echo $start . " - " . $end; ?></h5>
-                                    <h5><?php echo $location; ?></h5>
-                                </div>
-                            </div>
-                        </div>
-                        <?php 
-                                }
-                            }
-                            ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
 <?php get_footer(); ?>

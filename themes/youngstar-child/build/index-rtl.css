@@ -74,17 +74,7 @@ h4 {
 .container-full {
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
-}
-@media (max-width: 1400px) {
-  .container-full {
-    padding: 0rem 2rem;
-  }
-}
-@media (max-width: 700px) {
-  .container-full {
-    padding: 0rem 1rem;
-  }
+  margin: 2rem auto;
 }
 
 .container-full .container {
@@ -127,11 +117,13 @@ h4 {
 
 .heading {
   font-size: 3rem;
+  text-align: center;
   color: white !important;
 }
 @media (min-width: 700px) {
   .heading {
     font-size: 4rem;
+    text-align: right;
   }
 }
 @media (min-width: 1000px) {
@@ -154,6 +146,11 @@ h4 {
   .description > p {
     font-size: 26px !important;
   }
+}
+
+.copywrite {
+  padding: 2rem !important;
+  text-align: center;
 }
 
 header {
@@ -369,7 +366,7 @@ header > .middlebar > div .mobileMenu #menuDrop:checked + .mobileDropdown {
 }
 @media (max-width: 599px) {
   .homepage_top {
-    height: 450px;
+    height: 250px;
     min-height: auto;
     padding-bottom: 300px;
     padding-top: 0;
@@ -639,12 +636,53 @@ header > .middlebar > div .mobileMenu #menuDrop:checked + .mobileDropdown {
 }
 
 footer {
-  padding: 15px 20px;
-  text-align: center;
+  text-align: right;
 }
 footer p {
   color: rgba(2, 2, 2, 0.568627451);
   margin: 0 auto;
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  footer .content {
+    flex-direction: row;
+  }
+}
+footer .content--text {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  footer .content--text {
+    text-align: right;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  footer .content--text {
+    width: 50%;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+footer .content--link {
+  max-width: 50%;
+}
+@media (min-width: 1000px) {
+  footer .content--link {
+    max-width: 40%;
+  }
+}
+footer .content--svg {
+  margin: 0 auto;
+  border-radius: 1.4rem;
 }
 
 .main,
@@ -680,5 +718,164 @@ footer p {
 }
 .main__link,
 .article__link {
+  color: #2160a7;
+  font-weight: 600;
+}
+
+.coaching__supports--heading {
   color: #c9336d;
+  text-align: center;
+}
+.coaching__supports--text {
+  text-align: justify;
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  .coaching__supports--text {
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .coaching__supports--text {
+    font-size: 1.4rem;
+  }
+}
+.coaching__supports__list {
+  font-size: 0.8rem;
+}
+@media (min-width: 700px) {
+  .coaching__supports__list {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1000px) {
+  .coaching__supports__list {
+    font-size: 1.1rem;
+  }
+}
+
+.speciality__coaching--heading {
+  color: #c9336d;
+  text-align: center;
+}
+.speciality__coaching--text {
+  text-align: justify;
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  .speciality__coaching--text {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .speciality__coaching--text {
+    font-size: 1.4rem;
+  }
+}
+.speciality__coaching__list {
+  font-size: 0.8rem;
+}
+@media (min-width: 700px) {
+  .speciality__coaching__list {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1000px) {
+  .speciality__coaching__list {
+    font-size: 1.1rem;
+  }
+}
+.speciality__coaching__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 3rem 0rem;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .speciality__coaching__contacts {
+    flex-direction: row;
+  }
+}
+.speciality__coaching__contacts__card {
+  width: 80%;
+  min-height: 200px;
+  background-color: rgb(219, 218, 218);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.speciality__coaching__contacts__card:hover {
+  background-color: rgb(204, 203, 203);
+}
+@media (min-width: 700px) {
+  .speciality__coaching__contacts__card {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .speciality__coaching__contacts__card {
+    width: 100%;
+  }
+}
+.speciality__coaching__contacts__card--svg {
+  height: 4rem;
+  width: 4rem;
+  color: #2263ae;
+  margin-bottom: 2rem;
+}
+.speciality__coaching__contacts__card--heading {
+  color: #c9336d;
+}
+
+.group__coaching--heading {
+  color: #c9336d;
+  text-align: center;
+}
+.group__coaching--text {
+  text-align: justify;
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  .group__coaching--text {
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .group__coaching--text {
+    font-size: 1.4rem;
+  }
+}
+.group__coaching--disclaimer {
+  color: #c9336d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+@media (min-width: 700px) {
+  .group__coaching--disclaimer {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .group__coaching--disclaimer {
+    font-size: 1.2rem;
+  }
+}
+.group__coaching__list {
+  font-size: 0.8rem;
+}
+@media (min-width: 700px) {
+  .group__coaching__list {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1000px) {
+  .group__coaching__list {
+    font-size: 1.1rem;
+  }
+}
+.group__coaching__list--disclaimer {
+  font-style: italic;
 }

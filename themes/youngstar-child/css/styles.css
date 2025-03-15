@@ -613,10 +613,6 @@ header > .middlebar > div .mobileMenu #menuDrop:checked + .mobileDropdown {
     font-size: 0.8em;
 }
 
-footer {
-    padding: 15px 20px;
-    text-align: center;
-}
 footer p {
     color: #02020291;
     margin: 0 auto;

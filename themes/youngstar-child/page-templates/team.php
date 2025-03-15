@@ -293,41 +293,5 @@
     </div>    
     
 </div>
-<?php
-$bottom = get_field('bottom_section');
-if( $bottom ): ?>
-<div class="container-full homepage_bottom">
-    <div class="container">
-        <div class="row row-45-55">
-            <div class="p-0-10">
-                <?php echo $bottom['left_side_content']; ?>
-            </div>
-            <div>
-                <div class="homepage_bottom_grid p-0-10">
-                    <div class="row">
 
-                        <?php
-                            $rows = $bottom['grid_content'];
-                            if( $rows ) {
-                                foreach( $rows as $row ) {
-                                    $title = $row['title']; $image = $row['background_image']; ?>
-                        <div class="grid-item">
-                            <div style="background-image:url('<?php echo $image['url']; ?>');">
-                                <div>
-                                    <h4><?php echo $title; ?></h4>
-                                    <img src="/wp-content/uploads/2023/02/black-arrow.png" alt="right facing arrow">
-                                </div>
-                            </div>
-                        </div>
-                        <?php 
-                                }
-                            }
-                            ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
 <?php get_footer(); ?>

@@ -66,15 +66,7 @@ h4 {
 .container-full {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
-
-    @media (max-width: 1400px) {
-        padding: 0rem 2rem;
-    }
-
-    @media (max-width: 700px) {
-        padding: 0rem 1rem;
-    }
+    margin: 2rem auto;
 }
 .container-full .container {
     padding: 0 10px;
@@ -109,10 +101,12 @@ h4 {
 
 .heading {
     font-size: 3rem;
+    text-align: center;
     color: white !important;
 
     @media (min-width: 700px) {
         font-size: 4rem;
+        text-align: left;
     }
 
     @media (min-width: 1000px) {
@@ -134,8 +128,14 @@ h4 {
     }
 }
 
+.copywrite {
+    padding: 2rem !important;
+    text-align: center;
+}
+
 @import '_header';
 @import '_home';
 @import '_subpage';
 @import '_footer';
 @import '_what_is_youngstar';
+@import '_coaching_supports';
