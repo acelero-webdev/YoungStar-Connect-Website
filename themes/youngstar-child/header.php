@@ -77,30 +77,11 @@
                 <div class="header-menu">
                     <div>
                         <?php 
-                            wp_nav_menu( array(
-                                'menu'           => 'Main Menu',
-                                'fallback_cb'    => false
-                            ) );
+                            wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
                         ?>
                     </div>
                     <div>
                         <?php get_search_form(); ?>
-                    </div>
-                </div>
-                <div class="mobileMenu">
-                    <div id="mobileBtn">
-                        <label for="menuDrop">
-                            <span>|||</span>
-                            <input type="checkbox" id="menuDrop">
-                            <div class="mobileDropdown">
-                                <?php 
-                                    wp_nav_menu( array(
-                                        'menu'           => 'Main Menu',
-                                        'fallback_cb'    => false
-                                    ) );
-                                ?>
-                            </div>
-                        </label>
                     </div>
                 </div>
             </div>
