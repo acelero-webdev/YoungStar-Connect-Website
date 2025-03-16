@@ -911,3 +911,12 @@ footer .content--svg {
   color: #2263ae;
   font-weight: 600;
 }
+.rating__section__callout {
+  color: #c9336d;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.rating__section__callout--link {
+  color: #c9336d;
+  font-weight: 700;
+}
