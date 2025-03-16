@@ -1,0 +1,43 @@
+.rating__section {
+    &--heading {
+        color: $red;
+        text-align: center;
+        margin: 2.4rem 0;
+    }
+
+    &--text {
+        text-align: justify;
+        font-size: 1rem;
+
+        @media (min-width: 1000px) {
+            font-size: 1.2rem;
+        }
+
+        &--disclaimer {
+            color: $red;
+            font-size: 0.8rem;
+            font-style: italic;
+
+            @media (min-width: 700px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__list {
+        font-size: 0.8rem;
+
+        @media (min-width: 700px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 1.1rem;
+        }
+
+        &--link {
+            color: #2263ae;
+            font-weight: 600;
+        }
+    }
+}

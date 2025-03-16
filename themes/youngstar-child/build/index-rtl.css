@@ -153,6 +153,11 @@ h4 {
   text-align: center;
 }
 
+.link {
+  color: #2263ae;
+  font-weight: 600;
+}
+
 header {
   width: 100%;
   position: relative;
@@ -736,11 +741,6 @@ footer .content--svg {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 1000px) {
-  .coaching__supports--text {
-    font-size: 1.4rem;
-  }
-}
 .coaching__supports__list {
   font-size: 0.8rem;
 }
@@ -766,11 +766,6 @@ footer .content--svg {
 @media (min-width: 600px) {
   .speciality__coaching--text {
     font-size: 1.2rem;
-  }
-}
-@media (min-width: 1000px) {
-  .speciality__coaching--text {
-    font-size: 1.4rem;
   }
 }
 .speciality__coaching__list {
@@ -843,11 +838,6 @@ footer .content--svg {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 1000px) {
-  .group__coaching--text {
-    font-size: 1.4rem;
-  }
-}
 .group__coaching--disclaimer {
   color: #c9336d;
   font-size: 0.8rem;
@@ -878,4 +868,46 @@ footer .content--svg {
 }
 .group__coaching__list--disclaimer {
   font-style: italic;
+}
+
+.rating__section--heading {
+  color: #c9336d;
+  text-align: center;
+  margin: 2.4rem 0;
+}
+.rating__section--text {
+  text-align: justify;
+  font-size: 1rem;
+}
+@media (min-width: 1000px) {
+  .rating__section--text {
+    font-size: 1.2rem;
+  }
+}
+.rating__section--text--disclaimer {
+  color: #c9336d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+@media (min-width: 700px) {
+  .rating__section--text--disclaimer {
+    font-size: 1rem;
+  }
+}
+.rating__section__list {
+  font-size: 0.8rem;
+}
+@media (min-width: 700px) {
+  .rating__section__list {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1000px) {
+  .rating__section__list {
+    font-size: 1.1rem;
+  }
+}
+.rating__section__list--link {
+  color: #2263ae;
+  font-weight: 600;
 }

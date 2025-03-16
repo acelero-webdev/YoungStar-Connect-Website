@@ -133,9 +133,15 @@ h4 {
     text-align: center;
 }
 
+.link {
+    color: #2263ae;
+    font-weight: 600;
+}
+
 @import '_header';
 @import '_home';
 @import '_subpage';
 @import '_footer';
 @import '_what_is_youngstar';
 @import '_coaching_supports';
+@import '_youngstar_rating';
