@@ -727,6 +727,9 @@ footer .content--svg {
   font-weight: 600;
 }
 
+.coaching__supports {
+  margin-top: 3rem;
+}
 .coaching__supports--heading {
   color: #c9336d;
   text-align: center;
@@ -870,6 +873,9 @@ footer .content--svg {
   font-style: italic;
 }
 
+.rating__section {
+  margin-top: 3rem;
+}
 .rating__section--heading {
   color: #c9336d;
   text-align: center;
