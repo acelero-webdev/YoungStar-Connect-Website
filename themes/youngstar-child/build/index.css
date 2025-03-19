@@ -928,7 +928,12 @@ footer .content--svg {
 }
 
 .assessment {
-  margin: 3rem;
+  margin: 1.5rem;
+}
+@media (min-width: 700px) {
+  .assessment {
+    margin: 3rem;
+  }
 }
 .assessment--heading {
   color: #c9336d;
@@ -960,17 +965,20 @@ footer .content--svg {
 .assessment__contacts {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  margin: 3rem 0rem;
+  justify-content: center;
+  gap: 3rem;
   text-align: center;
 }
 @media (min-width: 1000px) {
   .assessment__contacts {
     flex-direction: row;
+    margin: 3rem;
+    gap: 5rem;
   }
 }
 .assessment__contacts__card {
   width: 80%;
+  margin: 0rem auto;
   min-height: 200px;
   background-color: rgb(240, 237, 237);
   border-radius: 2rem;
@@ -981,7 +989,7 @@ footer .content--svg {
 }
 @media (min-width: 700px) {
   .assessment__contacts__card {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 }
