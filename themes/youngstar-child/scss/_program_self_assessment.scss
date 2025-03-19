@@ -1,0 +1,109 @@
+.assessment {
+    margin: 3rem;
+
+    &--heading {
+        color: $red;
+        text-align: center;
+    }
+
+    &--text {
+        text-align: justify;
+        font-size: 1rem;
+
+        @media (min-width: 600px) {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__list {
+        font-size: 0.8rem;
+
+        @media (min-width: 700px) {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 1000px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        margin: 3rem 0rem;
+        text-align: center;
+
+        @media (min-width: 1000px) {
+            flex-direction: row;
+        }
+
+        &__card {
+            width: 80%;
+            min-height: 200px;
+            background-color: rgb(240, 237, 237);
+            border-radius: 2rem;
+            padding: 1rem;
+
+            &:hover {
+                background-color: rgb(204, 203, 203);
+            }
+
+            @media (min-width: 700px) {
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            @media (min-width: 1000px) {
+                width: 100%;
+            }
+
+            &--svg {
+                height: 3rem;
+                width: 3rem;
+                color: $blue;
+                margin-bottom: 1rem;
+            }
+
+            &--heading {
+                color: $red;
+                margin-bottom: 1rem;
+            }
+
+            &__list {
+                text-align: left;
+                padding-left: 1rem;
+
+                &--item {
+                    margin: 0.5rem 0rem;
+                }
+            }
+        }
+    }
+
+    &__qip {
+        padding: 2rem 0rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__buttons {
+            &--button {
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                border: 1px solid gray;
+
+                &:hover {
+                    background-color: $blue;
+
+                    & > a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
