@@ -1,8 +1,8 @@
 <?php /* Template Name: What Is YoungStar? */ ?>
 <?php get_header(); ?>
 <?php $banner = get_field('banner'); ?>
-<?php $what_is_youngstar_image = wp_get_attachment_image_url(398, 'medium'); ?>
-<?php $benefits_of_participation_image = wp_get_attachment_image_url(397, 'medium'); ?>
+<?php $what_is_youngstar_image = wp_get_attachment_image_url(416, 'medium'); ?>
+<?php $benefits_of_participation_image = wp_get_attachment_image_url(415, 'medium'); ?>
 
 <?php /* BANNER */ ?>
 <div class="container-full homepage_top subpage_top"
