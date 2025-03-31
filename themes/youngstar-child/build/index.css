@@ -949,59 +949,13 @@ footer .content--svg {
   color: #2160a7;
   font-weight: 600;
 }
-
-.rating__section {
-  margin-top: 3rem;
-}
-.rating__section--heading {
-  color: #c9336d;
+.single__article--help {
   text-align: center;
-  margin: 2.4rem 0;
 }
-.rating__section--text {
-  text-align: justify;
-  font-size: 1rem;
-}
-@media (min-width: 1000px) {
-  .rating__section--text {
-    font-size: 1.2rem;
-  }
-}
-.rating__section--text--disclaimer {
-  color: #c9336d;
-  font-size: 0.8rem;
-  font-style: italic;
-}
-@media (min-width: 700px) {
-  .rating__section--text--disclaimer {
-    font-size: 1rem;
-  }
-}
-.rating__section__list {
-  font-size: 0.8rem;
-}
-@media (min-width: 700px) {
-  .rating__section__list {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 1000px) {
-  .rating__section__list {
-    font-size: 1.1rem;
-  }
-}
-.rating__section__list--link {
+.single__article--help > p > span {
+  font-size: 18px;
+  font-weight: 700;
   color: #2263ae;
-  font-weight: 600;
-}
-.rating__section__callout {
-  color: #c9336d;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.rating__section__callout--link {
-  color: #c9336d;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.css.map*/

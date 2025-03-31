@@ -184,5 +184,15 @@
             color: #2160a7;
             font-weight: 600;
         }
+
+        &--help {
+            text-align: center;
+
+            & > p > span {
+                font-size: 18px;
+                font-weight: 700;
+                color: $blue;
+            }
+        }
     }
 }
