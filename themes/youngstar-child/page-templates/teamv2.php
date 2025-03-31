@@ -196,12 +196,12 @@ h4 {
 <div class="container-full homepage_top subpage_top"
     style="background-image: url('<?php echo $banner['background_image']['url']?>');">
     <div class="container">
-        <div class="row row-50-50">
-            <div>
-                <?php echo $banner['content']; ?>
-            </div>
-            <div></div>
-        </div>
+        <h1 class='heading'>
+			<?php echo $banner['heading'] ?>
+		</h1>
+		<div class='description'>
+			<?php echo $banner['content']; ?>
+		</div>
     </div>
 </div>
 <div class="container-full homepage_content">
