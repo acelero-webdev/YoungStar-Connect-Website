@@ -43,8 +43,8 @@
             </div>
         </section>
 
-        <section class='group__coaching'>
-            <h2 class='group__coaching--heading'><?php echo $article2['heading']; ?></h2>
+        <section class='single__article'>
+            <h2 class='single__article--heading'><?php echo $article2['heading']; ?></h2>
             <?php echo $article2['content']; ?>
         </section>
     </div>

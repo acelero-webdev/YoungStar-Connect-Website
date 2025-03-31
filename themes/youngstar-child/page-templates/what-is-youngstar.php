@@ -52,15 +52,15 @@
 
 <?php /* BOTTOM ARTICLE */ ?>
 <?php if($bottom) { ?>
-    <article class='bottom container'>
+    <article class='single container'>
         <div>
-            <h2 class='bottom__article__heading'><?php echo $bottom['section']['heading'] ?></h2>
-            <div class='bottom__article__img-container'>
+            <h2 class='single__article__heading'><?php echo $bottom['section']['heading'] ?></h2>
+            <div class='single__article__img-container'>
                 <?php if($bottom['section']['image']) { ?>
-                    <img class='bottom__article__img' src="<?php echo $bottom['section']['image']['url'] ?>" alt="<?php echo $bottom['section']['image']['alt'] ?>"/>
+                    <img class='single__article__img' src="<?php echo $bottom['section']['image']['url'] ?>" alt="<?php echo $bottom['section']['image']['alt'] ?>"/>
                 <?php } ?>
             </div>
-            <div class='bottom__article__content'>
+            <div class='single__article__content'>
                 <?php echo $bottom['section']['content']?>
             </div>
         </div>
