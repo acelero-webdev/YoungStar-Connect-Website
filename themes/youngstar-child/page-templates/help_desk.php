@@ -20,6 +20,7 @@
         <h2 class='single__article--heading'><?php echo $article['heading']; ?></h2>
         <div class='single__article--help'>
             <?php echo $article['content']; ?>
+            <span class='single__article--callout'><?php echo $article['callout']; ?><span>
         </div>
     </main>
 </article>
