@@ -1,0 +1,42 @@
+.bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    margin: 2rem 0rem;
+    text-align: center;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    &__article {
+        &__heading,
+        h2 {
+            color: $red;
+            text-align: center;
+        }
+
+        &__img,
+        img {
+            width: 10rem;
+
+            &-container {
+                text-align: center;
+            }
+        }
+
+        &__text,
+        &__list,
+        p,
+        ul {
+            font-size: 18px;
+        }
+
+        &__link,
+        a {
+            color: #2160a7;
+            font-weight: 600;
+        }
+    }
+}
