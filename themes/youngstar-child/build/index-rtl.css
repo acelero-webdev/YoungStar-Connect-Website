@@ -905,6 +905,17 @@ footer .content--svg {
 .single__article img-container {
   text-align: center;
 }
+.single__article__img--alt,
+.single__article img--alt {
+  width: 15rem;
+}
+.single__article__img__container__alt,
+.single__article img__container__alt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
 .single__article__text, .single__article__list,
 .single__article p,
 .single__article ul {

@@ -145,6 +145,17 @@
             &-container {
                 text-align: center;
             }
+
+            &--alt {
+                width: 15rem;
+            }
+
+            &__container__alt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
+            }
         }
 
         &__text,
