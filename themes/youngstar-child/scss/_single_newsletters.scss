@@ -1,5 +1,5 @@
 .newsletter {
-    margin: 4rem auto;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -11,19 +11,41 @@
 
     &__hero {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        justify-content: center;
         align-items: center;
-        gap: 10rem;
+        gap: 2rem;
+        text-align: center;
+
+        @media (min-width: 900px) {
+            text-align: left;
+            flex-direction: row;
+            gap: 5rem;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 10rem;
+        }
 
         &--reverse {
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+            @media (min-width: 900px) {
+                flex-direction: row-reverse;
+            }
         }
 
         &__text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 1rem;
             width: 100%;
+
+            @media (min-width: 900px) {
+                align-items: baseline;
+            }
 
             &--heading {
                 color: $red;
@@ -31,6 +53,37 @@
 
             &--content {
                 font-size: 1.2rem;
+
+                & > a {
+                    color: $blue;
+                }
+
+                & > ul {
+                    text-align: left;
+
+                    & > li {
+                        @media (min-width: 900px) {
+                            font-size: 1.4rem;
+                        }
+
+                        & > a {
+                            color: $blue;
+                        }
+                    }
+
+                    & > a {
+                        color: $blue;
+                    }
+                }
+
+                & > p {
+                    text-align: center;
+
+                    @media (min-width: 900px) {
+                        font-size: 1.4rem;
+                        text-align: left;
+                    }
+                }
             }
 
             &__buttons {
@@ -93,6 +146,11 @@
         &--heading,
         h2 {
             color: $red;
+            text-align: center;
+
+            @media (min-width: 900px) {
+                text-align: left;
+            }
         }
 
         &--content,
@@ -101,6 +159,11 @@
         li,
         ol {
             font-size: 1.2rem;
+            text-align: left;
+
+            @media (min-width: 900px) {
+                font-size: 1.4rem;
+            }
         }
 
         a {
@@ -109,8 +172,31 @@
     }
 
     &__links {
+        margin: 0rem auto;
+
+        @media (min-width: 900px) {
+            margin: 0rem;
+        }
+
         &--heading {
             color: $red;
+            text-align: center;
+
+            @media (min-width: 900px) {
+                text-align: left;
+            }
+        }
+
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.7rem;
+
+            @media (min-width: 900px) {
+                justify-content: flex-start;
+            }
         }
 
         &--link {
@@ -122,14 +208,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0.8rem;
-            padding: 0.6rem 1.2rem;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
             background-color: $blue;
             color: white;
             outline: none;
             border: none;
             border-radius: 1rem;
-            margin-right: 0.5rem;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+
+            & > svg {
+                transform: scale(0.8);
+            }
+
+            @media (min-width: 900px) {
+                font-size: 1.2rem;
+                padding: 0.6rem 1.2rem;
+                gap: 0.8rem;
+                margin-right: 0.5rem;
+
+                & > svg {
+                    transform: scale(1);
+                }
+            }
 
             &:hover {
                 background-color: white;
@@ -144,6 +246,11 @@
         &--heading,
         h2 {
             color: $red;
+            text-align: center;
+
+            @media (min-width: 900px) {
+                text-align: left;
+            }
         }
 
         &--content,
@@ -152,6 +259,12 @@
         li,
         ol {
             font-size: 1.2rem;
+            text-align: center;
+
+            @media (min-width: 900px) {
+                font-size: 1.4rem;
+                text-align: left;
+            }
         }
 
         a {
@@ -159,6 +272,13 @@
         }
 
         &--buttons {
+            display: flex;
+            justify-content: center;
+
+            @media (min-width: 900px) {
+                justify-content: flex-start;
+            }
+
             &--link {
                 display: inline-block;
                 text-decoration: none;

@@ -116,9 +116,11 @@
     <?php if($linksSection['is_active'] && count($linksSection['links']) > 0 ) { ?>
         <div class='newsletter__links'>
             <h2 class='newsletter__links--heading'><?php echo $linksSection['heading'] ?></h2>
-            <?php foreach($linksSection['links'] as $link) { ?>
-                <a href="<?php echo $link['url']['url']?>" target="<?php echo $link['url']['target'] ?>" class='newsletter__links--link'><button class='newsletter__links--button'><?php echo $link['svg']?> <?php echo $link['title'] ?></button></a>
-            <?php } ?>
+            <div class='newsletter__links--container'>
+                <?php foreach($linksSection['links'] as $link) { ?>
+                    <a href="<?php echo $link['url']['url']?>" target="<?php echo $link['url']['target'] ?>" class='newsletter__links--link'><button class='newsletter__links--button'><?php echo $link['svg']?> <?php echo $link['title'] ?></button></a>
+                <?php } ?>
+            </div>
         </div>
     <?php } ?>
 
