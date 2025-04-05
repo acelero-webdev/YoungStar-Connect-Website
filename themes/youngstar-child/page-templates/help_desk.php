@@ -10,7 +10,7 @@
 				<?php echo $banner['heading'] ?>
 			</h1>
             <div class='description'>
-                <?php echo $banner['content']; ?>
+                <p><?php echo $banner['content']; ?></p>
             </div>
     </div>
 </div>
