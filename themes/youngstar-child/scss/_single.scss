@@ -204,7 +204,7 @@
 
             @media (min-width: 1000px) {
                 text-align: left !important;
-                display: flex;
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 gap: 5rem;
