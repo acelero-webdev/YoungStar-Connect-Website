@@ -199,6 +199,13 @@
         &--help {
             text-align: center;
 
+            @media (min-width: 1000px) {
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
             &--callout {
                 font-size: 18px;
                 font-weight: 700;

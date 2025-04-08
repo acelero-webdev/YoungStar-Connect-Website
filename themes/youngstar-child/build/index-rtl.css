@@ -967,6 +967,14 @@ footer .content--svg {
 .single__article--help {
   text-align: center;
 }
+@media (min-width: 1000px) {
+  .single__article--help {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .single__article--help--callout {
   font-size: 18px;
   font-weight: 700;

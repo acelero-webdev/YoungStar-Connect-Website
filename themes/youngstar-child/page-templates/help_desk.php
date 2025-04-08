@@ -19,14 +19,16 @@
     <main class='single__article'>
         <h2 class='single__article--heading'><?php echo $article['heading']; ?></h2>
         <div class='single__article--help'>
-            <?php echo $article['content']; ?>
-            <span class='single__article--help--callout'><?php echo $article['callout']; ?><span>
+            <div class='single__article--help__text'>
+                <?php echo $article['content']; ?>
+                <span class='single__article--help--callout'><?php echo $article['callout']; ?><span>
+                <?php // SALESFORCE HELP DESK FORM LOADS HERE ?>
+            </div>
+            <div id="flowComponent">SALESFORCE FORM</div>
         </div>
+        
     </main>
 </article>
-
-<?php // SALESFORCE HELP DESK FORM LOADS HERE ?>
-<div id="flowComponent"></div>
 
 <?php the_content(); ?>
 
