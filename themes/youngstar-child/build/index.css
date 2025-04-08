@@ -1300,12 +1300,12 @@ footer .content--svg {
   }
 }
 .newsletter__archive__hero--img > img {
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
 }
 @media (min-width: 700px) {
   .newsletter__archive__hero--img > img {
-    width: 30rem;
+    width: 40rem;
     height: 30rem;
   }
 }

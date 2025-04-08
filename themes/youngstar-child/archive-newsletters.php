@@ -19,7 +19,7 @@
         </div>
         
         <div class='newsletter__archive__hero--form'>
-            <p>FORM COMING SOON!</p>
+            <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd94d4_2F5337WmKyXyyFb0ZZ3emqQB2fkXa90NU7p7JvsV.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
         </div>
     </main>
 

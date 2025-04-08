@@ -25,6 +25,9 @@
     </main>
 </article>
 
+<?php // SALESFORCE HELP DESK FORM LOADS HERE ?>
+<div id="flowComponent"></div>
+
 <?php the_content(); ?>
 
 <?php get_footer(); ?>
