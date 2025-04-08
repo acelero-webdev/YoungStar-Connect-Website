@@ -212,11 +212,11 @@
 
             &__heading,
             & > h2 {
-                color: $red;
-                text-align: center;
+                color: $red !important;
+                text-align: center !important;
 
                 @media (min-width: 1000px) {
-                    text-align: left;
+                    text-align: left !important;
                 }
             }
 
