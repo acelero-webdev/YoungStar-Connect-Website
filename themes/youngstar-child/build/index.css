@@ -972,11 +972,20 @@ footer .content--svg {
 }
 @media (min-width: 1000px) {
   .single__article--help {
-    text-align: left !important;
+    text-align: left;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
+  }
+}
+.single__article--help__heading {
+  color: #c9336d;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .single__article--help__heading {
+    text-align: left;
   }
 }
 .single__article--help--callout {
