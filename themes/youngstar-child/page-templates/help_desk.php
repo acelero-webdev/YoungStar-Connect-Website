@@ -19,7 +19,7 @@
     <main class='single__article'>
         <div class='single__article--help'>
             <div class='single__article--help__text'>
-                <h2 class='single__article--help__heading'><?php echo $article['heading']; ?></h2>
+                <h2><?php echo $article['heading']; ?></h2>
                 <?php echo $article['content']; ?>
                 <span class='single__article--help--callout'><?php echo $article['callout']; ?><span>
                 <?php // SALESFORCE HELP DESK FORM LOADS HERE ?>

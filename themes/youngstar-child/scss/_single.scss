@@ -197,27 +197,17 @@
         }
 
         &--help {
-            text-align: center;
+            text-align: center !important;
             display: flex;
             flex-direction: column;
             gap: 3rem;
 
             @media (min-width: 1000px) {
-                text-align: left;
+                text-align: left !important;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 gap: 5rem;
-            }
-
-            &__heading,
-            & > h2 {
-                color: $red !important;
-                text-align: center !important;
-
-                @media (min-width: 1000px) {
-                    text-align: left !important;
-                }
             }
 
             &--callout {
