@@ -10,7 +10,7 @@
     style="background-image: url('<?php echo $banner['background_image']['url']?>');">
     <div class="container">
         <h1 class='heading'>
-			<?php $banner['heading']; ?>
+			<?php echo $banner['heading']; ?>
 		</h1>
 		<div class='description'>
 			<?php echo $banner['content']; ?>
