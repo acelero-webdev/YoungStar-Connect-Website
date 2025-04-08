@@ -1313,6 +1313,9 @@ footer .content--svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
 }
 .newsletter__archive__hero--form > p {
   font-size: 2.4rem;
