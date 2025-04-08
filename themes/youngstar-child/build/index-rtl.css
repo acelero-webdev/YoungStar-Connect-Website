@@ -965,14 +965,18 @@ footer .content--svg {
   font-weight: 600;
 }
 .single__article--help {
-  text-align: center;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 @media (min-width: 1000px) {
   .single__article--help {
-    text-align: right;
+    text-align: right !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
   }
 }
 .single__article--help--callout {
