@@ -1294,7 +1294,7 @@ footer .content--svg {
   gap: 5rem;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .newsletter__archive__hero {
     flex-direction: row;
   }
