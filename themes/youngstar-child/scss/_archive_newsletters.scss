@@ -43,6 +43,12 @@
             height: 600px;
             overflow: scroll;
 
+            /* SURVEY MONEKY CONTAINER */
+            .smcx-embed {
+                height: 600px !important;
+                overflow: scroll !important;
+            }
+
             & > p {
                 font-size: 2.4rem;
                 text-align: center;

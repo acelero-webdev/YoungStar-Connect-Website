@@ -1316,6 +1316,11 @@ footer .content--svg {
   width: 100%;
   height: 600px;
   overflow: scroll;
+  /* SURVEY MONEKY CONTAINER */
+}
+.newsletter__archive__hero--form .smcx-embed {
+  height: 600px !important;
+  overflow: scroll !important;
 }
 .newsletter__archive__hero--form > p {
   font-size: 2.4rem;
