@@ -210,6 +210,14 @@
                 gap: 5rem;
             }
 
+            &__text {
+                width: 100%;
+
+                @media (min-width: 1000px) {
+                    width: 50%;
+                }
+            }
+
             &__heading {
                 color: $red;
                 text-align: center;

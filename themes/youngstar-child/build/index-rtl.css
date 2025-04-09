@@ -978,6 +978,14 @@ footer .content--svg {
     gap: 5rem;
   }
 }
+.single__article--help__text {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .single__article--help__text {
+    width: 50%;
+  }
+}
 .single__article--help__heading {
   color: #c9336d;
   text-align: center;
