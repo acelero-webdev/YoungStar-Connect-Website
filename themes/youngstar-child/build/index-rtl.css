@@ -964,7 +964,7 @@ footer .content--svg {
   font-weight: 600;
 }
 .single__article--help {
-  text-align: center !important;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -981,6 +981,7 @@ footer .content--svg {
 .single__article--help__heading {
   color: #c9336d;
   text-align: center;
+  margin-bottom: 1rem;
 }
 @media (min-width: 1000px) {
   .single__article--help__heading {

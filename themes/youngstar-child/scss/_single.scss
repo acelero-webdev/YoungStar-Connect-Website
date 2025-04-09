@@ -197,7 +197,7 @@
         }
 
         &--help {
-            text-align: center !important;
+            text-align: center;
             display: flex;
             flex-direction: column;
             gap: 3rem;
@@ -213,6 +213,7 @@
             &__heading {
                 color: $red;
                 text-align: center;
+                margin-bottom: 1rem;
 
                 @media (min-width: 1000px) {
                     text-align: left;
