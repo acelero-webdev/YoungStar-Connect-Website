@@ -133,7 +133,7 @@
 
     &__article {
         &__heading,
-        h2 {
+        & > h2 {
             color: $red;
             text-align: center;
         }
