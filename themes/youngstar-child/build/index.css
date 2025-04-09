@@ -1001,6 +1001,14 @@ footer .content--svg {
   font-weight: 700;
   color: #2263ae;
 }
+.single__article--help > #flowComponent {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .single__article--help > #flowComponent {
+    width: 50%;
+  }
+}
 
 .newsletter {
   margin: 3rem auto;

@@ -233,6 +233,14 @@
                 font-weight: 700;
                 color: $blue;
             }
+
+            & > #flowComponent {
+                width: 100%;
+
+                @media (min-width: 1000px) {
+                    width: 50%;
+                }
+            }
         }
     }
 }
