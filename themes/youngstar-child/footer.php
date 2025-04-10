@@ -1,4 +1,4 @@
-<?php $feedbackImage = wp_get_attachment_image(644, [200, 200], false, array('class' => 'content--svg' )); ?>
+<?php $feedbackImage = wp_get_attachment_image(532, [200, 200], false, array('class' => 'content--svg' )); ?>
 
 <footer>
     <div class="container-full">
