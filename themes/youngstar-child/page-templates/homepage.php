@@ -33,7 +33,7 @@
                 while( have_rows('grid_content') ) : the_row(); ?>
 
 			<?php if(get_sub_field( 'image_url')): ?>
-				<div onclick="window.open('<?php echo get_sub_field('image_url')?>', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" style="cursor: pointer" class="grid-item" aria-haspopup="dialog" tabIndex="0">
+				<div onclick="window.open('<?php echo get_sub_field('image_url')?>', '_self', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');" style="cursor: pointer" class="grid-item" aria-haspopup="dialog" tabIndex="0">
 					<div style="background-image:url('<?php echo get_sub_field('image')['url']; ?>');">
 						<div class="not-rollover">
 							<h4><?php echo get_sub_field('title'); ?></h4>

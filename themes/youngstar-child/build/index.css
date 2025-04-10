@@ -653,25 +653,28 @@ footer p {
 }
 footer .content {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  gap: 2rem;
+  flex-direction: column-reverse;
+  max-width: 1000px;
+  gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
 }
 @media (min-width: 800px) {
   footer .content {
     flex-direction: row;
+    gap: 5rem;
+    width: 80%;
   }
 }
 footer .content--text {
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   footer .content--text {
     text-align: left;
     font-size: 1rem;
+    width: 100%;
   }
 }
 @media (min-width: 1000px) {
@@ -692,6 +695,8 @@ footer .content--link {
 footer .content--svg {
   margin: 0 auto;
   border-radius: 1.4rem;
+  width: 200px;
+  height: 200px;
 }
 
 .hero {
@@ -772,11 +777,11 @@ footer .content--svg {
   margin: 2.5rem auto;
 }
 .single__card {
-  margin: 1.5rem;
+  margin: 1.5rem auto;
 }
 @media (min-width: 700px) {
   .single__card {
-    margin: 3rem;
+    margin: 3rem auto;
   }
 }
 .single__card--heading,
@@ -822,7 +827,7 @@ footer .content--svg {
 @media (min-width: 1000px) {
   .single__card__contacts {
     flex-direction: row;
-    margin: 3rem;
+    margin: 3rem auto;
     gap: 5rem;
   }
 }

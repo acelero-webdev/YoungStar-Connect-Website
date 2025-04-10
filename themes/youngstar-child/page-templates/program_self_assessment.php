@@ -1,6 +1,7 @@
 <?php /* Template Name: Program Self-Assessment */ ?>
 <?php get_header(); ?>
 <?php $banner = get_field("banner"); ?>
+<?php $intro = get_field("intro"); ?>
 <?php $aside = get_field("aside"); ?>
 
 <?php /* BANNER */ ?>
@@ -18,6 +19,11 @@
 
 <?php /* CONTENT */ ?>
     <div class="single container">
+        <section class='single__article'>
+            <h2 class='single__article--heading'><?php echo $intro['heading']; ?></h2>
+            <?php echo $intro['content']; ?>
+        </section>
+
         <main class="single__card">
             <h2 class="single__card--heading">Self-Assessment Resources</h2>
             <div class="single__card__contacts">

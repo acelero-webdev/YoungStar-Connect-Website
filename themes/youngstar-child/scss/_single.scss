@@ -2,10 +2,10 @@
     margin: 2.5rem auto;
 
     &__card {
-        margin: 1.5rem;
+        margin: 1.5rem auto;
 
         @media (min-width: 700px) {
-            margin: 3rem;
+            margin: 3rem auto;
         }
 
         &--heading,
@@ -47,7 +47,7 @@
 
             @media (min-width: 1000px) {
                 flex-direction: row;
-                margin: 3rem;
+                margin: 3rem auto;
                 gap: 5rem;
             }
 
