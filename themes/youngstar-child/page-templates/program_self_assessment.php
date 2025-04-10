@@ -21,7 +21,7 @@
     <div class="single container">
         <section class='single__article'>
             <h2 class='single__article--heading'><?php echo $intro['heading']; ?></h2>
-            <?php echo $intro['content']; ?>
+            <p class='single__article--text'><?php echo $intro['content']; ?></p>
         </section>
 
         <main class="single__card">
