@@ -2,10 +2,10 @@
     margin: 2.5rem auto;
 
     &__card {
-        margin: 1.5rem;
+        margin: 1.5rem auto;
 
         @media (min-width: 700px) {
-            margin: 3rem;
+            margin: 3rem auto;
         }
 
         &--heading,
@@ -47,7 +47,7 @@
 
             @media (min-width: 1000px) {
                 flex-direction: row;
-                margin: 3rem;
+                margin: 3rem auto;
                 gap: 5rem;
             }
 
@@ -133,7 +133,7 @@
 
     &__article {
         &__heading,
-        h2 {
+        & > h2 {
             color: $red;
             text-align: center;
         }
@@ -144,6 +144,17 @@
 
             &-container {
                 text-align: center;
+            }
+
+            &--alt {
+                width: 15rem;
+            }
+
+            &__container__alt {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
             }
         }
 
@@ -183,6 +194,53 @@
         a {
             color: #2160a7;
             font-weight: 600;
+        }
+
+        &--help {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            @media (min-width: 1000px) {
+                text-align: left;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5rem;
+            }
+
+            &__text {
+                width: 100%;
+
+                @media (min-width: 1000px) {
+                    width: 50%;
+                }
+            }
+
+            &__heading {
+                color: $red;
+                text-align: center;
+                margin-bottom: 1rem;
+
+                @media (min-width: 1000px) {
+                    text-align: left;
+                }
+            }
+
+            &--callout {
+                font-size: 18px;
+                font-weight: 700;
+                color: $blue;
+            }
+
+            & > #flowComponent {
+                width: 100%;
+
+                @media (min-width: 1000px) {
+                    width: 50%;
+                }
+            }
         }
     }
 }

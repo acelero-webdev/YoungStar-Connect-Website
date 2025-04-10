@@ -1,0 +1,151 @@
+.newsletter__archive {
+    margin: 3rem auto;
+    max-width: 1200px;
+
+    &--heading {
+        color: $red;
+        margin: 2rem auto;
+        text-align: center;
+
+        @media (min-width: 700px) {
+            text-align: left;
+        }
+    }
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        align-items: center;
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        }
+
+        &--img {
+            & > img {
+                width: 30rem;
+                height: 20rem;
+
+                @media (min-width: 700px) {
+                    width: 40rem;
+                    height: 30rem;
+                }
+            }
+        }
+
+        &--form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            /* SURVEY MONEKY CONTAINER */
+            .smcx-embed {
+                height: 600px !important;
+                overflow: scroll !important;
+            }
+
+            & > p {
+                font-size: 2.4rem;
+                text-align: center;
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        max-width: 1200px;
+        gap: 3rem;
+        margin: 0rem auto;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 650px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1000px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__card {
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 2rem;
+            padding: 1.5rem 0rem;
+            position: relative;
+            background-color: lighten($blue, 50%);
+            color: white;
+
+            &:hover {
+                background-color: $blue;
+                transition-duration: 0.5s;
+
+                & > h2 {
+                    color: white;
+                    transition-duration: 0.5s;
+                }
+
+                & > p,
+                & > a {
+                    opacity: 1;
+                    color: white;
+                    transition-duration: 0.5s;
+                }
+
+                & > svg {
+                    opacity: 0;
+                    transition-duration: 0.5s;
+                    display: none;
+                }
+            }
+
+            &--heading {
+                font-size: 1.8rem;
+                color: $blue;
+                border-bottom: 1px solid white;
+                padding-bottom: 1rem;
+            }
+
+            &--text,
+            &--link {
+                font-size: 1.2rem;
+                width: 80%;
+                margin: auto;
+                opacity: 0;
+            }
+
+            &--text {
+                min-height: 8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+            }
+
+            &--link {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 0.3rem;
+                text-decoration: none;
+                z-index: 10;
+                margin: 0.8rem 0rem;
+
+                & > svg {
+                    transform: scale(0.9);
+                }
+            }
+
+            &--svg {
+                position: absolute;
+                color: $blue;
+
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(5) translateX(-2px);
+            }
+        }
+    }
+}

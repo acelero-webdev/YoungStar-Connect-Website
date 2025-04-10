@@ -99,17 +99,17 @@ h4 {
 }
 
 .heading {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     color: white !important;
 
     @media (min-width: 700px) {
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: left;
     }
 
     @media (min-width: 1000px) {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
@@ -118,13 +118,17 @@ h4 {
     text-align: justify !important;
     color: white !important;
     padding-bottom: 2rem;
+    width: 80%;
+    margin: 0rem auto;
 
     @media (min-width: 700px) {
-        font-size: 22px !important;
+        font-size: 18px !important;
+        width: 100%;
+        margin: 0rem;
     }
 
     @media (min-width: 1000px) {
-        font-size: 26px !important;
+        font-size: 23px !important;
     }
 }
 
@@ -145,4 +149,5 @@ h4 {
 @import '_hero';
 @import '_article';
 @import 'single';
-@import '_youngstar_rating';
+@import '_single_newsletters';
+@import '_archive_newsletters';
