@@ -55,9 +55,9 @@
                 
                 <?php if($hero_left['buttons'] && $hero_left['buttons']['is_active']) { ?>
                     <div class='newsletter__hero__text__buttons'>
-                        <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_left['buttons']['primary_button_link']['url'] ?>' target="_blank"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-primary'><?php echo $hero_left['buttons']['primary_button_text'] ?></button></a>
+                        <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_left['buttons']['primary_button_link']['url'] ?>' target="<?php echo $hero_left['buttons']['primary_button_link']['target'] ?>"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-primary'><?php echo $hero_left['buttons']['primary_button_text'] ?></button></a>
                         <?php if($hero_left['buttons']['secondary_button_text'] && $hero_left['buttons']['secondary_button_link']) { ?>
-                            <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_left['buttons']['secondary_button_link']['url'] ?>' target="_blank"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-secondary'><?php echo $hero_left['buttons']['secondary_button_text'] ?></button></a>
+                            <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_left['buttons']['secondary_button_link']['url'] ?>' target="<?php echo $hero_left['buttons']['secondary_button_link']['target'] ?>"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-secondary'><?php echo $hero_left['buttons']['secondary_button_text'] ?></button></a>
                         <?php } ?>
                     </div>
                 <?php } ?>
@@ -81,9 +81,9 @@
                 
                 <?php if($hero_right['buttons'] && $hero_right['buttons']['is_active']) { ?>
                     <div class='newsletter__hero__text__buttons'>
-                        <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_right['buttons']['primary_button_link']['url'] ?>' target="_blank"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-primary'><?php echo $hero_right['buttons']['primary_button_text'] ?></button></a>
+                        <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_right['buttons']['primary_button_link']['url'] ?>' target="<?php echo $hero_right['buttons']['primary_button_link']['target'] ?>"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-primary'><?php echo $hero_right['buttons']['primary_button_text'] ?></button></a>
                         <?php if($hero_right['buttons']['secondary_button_text'] && $hero_right['buttons']['secondary_button_link']) { ?>
-                            <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_right['buttons']['secondary_button_link']['url'] ?>' target="_blank"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-secondary'><?php echo $hero_right['buttons']['secondary_button_text'] ?></button></a>
+                            <a class='newsletter__hero__text__buttons--link' href='<?php echo $hero_right['buttons']['secondary_button_link']['url'] ?>' target="<?php echo $hero_right['buttons']['secondary_button_link']['target'] ?>"><button class='newsletter__hero__text__buttons--button newsletter__hero__text__buttons--button-secondary'><?php echo $hero_right['buttons']['secondary_button_text'] ?></button></a>
                         <?php } ?>
                     </div>
                 <?php } ?>
