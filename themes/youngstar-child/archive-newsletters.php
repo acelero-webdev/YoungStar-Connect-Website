@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php $banner = get_field('banner'); ?>
-<?php $heroImage = wp_get_attachment_image(632, [600, 600]);?>
+<?php $heroImage = wp_get_attachment_image(533, [600, 600]);?>
 
 <div class="container-full homepage_top subpage_top"
     style="background-image: url('<?php echo $banner['background_image']['url']?>');">
