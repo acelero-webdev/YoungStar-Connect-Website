@@ -45,31 +45,28 @@
             gap: 3rem;
             text-align: center;
 
-            @media (min-width: 1000px) {
+            @media (min-width: 850px) {
                 flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
                 margin: 3rem auto;
-                gap: 5rem;
             }
 
             &__card {
                 width: 80%;
-                margin: 0rem auto;
                 min-height: 200px;
                 background-color: rgb(240, 237, 237);
                 border-radius: 2rem;
                 padding: 1rem;
+                margin: 0rem auto;
 
-                &:hover {
-                    background-color: rgb(204, 203, 203);
+                @media (min-width: 850px) {
+                    width: 43%;
+                    margin: 0rem;
                 }
 
-                @media (min-width: 700px) {
-                    width: 100%;
-                    margin: 0 auto;
-                }
-
-                @media (min-width: 1000px) {
-                    width: 100%;
+                @media (min-width: 1200px) {
+                    width: 45%;
                 }
 
                 &--svg,
@@ -89,7 +86,7 @@
                 &__list,
                 ul {
                     text-align: left;
-                    padding-left: 1rem;
+                    padding-left: 3rem;
 
                     &--item {
                         margin: 0.5rem 0rem;

@@ -823,33 +823,31 @@ footer .content--svg {
   gap: 3rem;
   text-align: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 850px) {
   .single__card__contacts {
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 3rem auto;
-    gap: 5rem;
   }
 }
 .single__card__contacts__card {
   width: 80%;
-  margin: 0rem auto;
   min-height: 200px;
   background-color: rgb(240, 237, 237);
   border-radius: 2rem;
   padding: 1rem;
+  margin: 0rem auto;
 }
-.single__card__contacts__card:hover {
-  background-color: rgb(204, 203, 203);
-}
-@media (min-width: 700px) {
+@media (min-width: 850px) {
   .single__card__contacts__card {
-    width: 100%;
-    margin: 0 auto;
+    width: 43%;
+    margin: 0rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .single__card__contacts__card {
-    width: 100%;
+    width: 45%;
   }
 }
 .single__card__contacts__card--svg,
@@ -867,7 +865,7 @@ footer .content--svg {
 .single__card__contacts__card__list,
 .single__card__contacts__card ul {
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 .single__card__contacts__card__list--item,
 .single__card__contacts__card ul--item {
