@@ -654,16 +654,15 @@ footer p {
 footer .content {
   display: flex;
   flex-direction: column-reverse;
-  max-width: 1000px;
   gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
+  padding: 0rem 1rem;
 }
 @media (min-width: 800px) {
   footer .content {
     flex-direction: row;
     gap: 5rem;
-    width: 80%;
   }
 }
 footer .content--text {
