@@ -868,8 +868,14 @@ footer .content--svg {
   padding-right: 3rem;
 }
 .single__card__contacts__card__list--item,
-.single__card__contacts__card ul--item {
+.single__card__contacts__card__list li,
+.single__card__contacts__card ul--item,
+.single__card__contacts__card ul li {
   margin: 0.5rem 0rem;
+}
+.single__card__contacts__card a {
+  color: #2263ae;
+  font-weight: 600;
 }
 .single__aside {
   padding: 2rem 0rem;
