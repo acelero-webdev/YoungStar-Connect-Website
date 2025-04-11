@@ -190,6 +190,13 @@ header > .topbar > div .socials a {
 header > .topbar > div .socials a:hover {
   cursor: pointer;
 }
+header > .topbar > div .socials--svg {
+  border-radius: 0.3rem;
+  padding: 0.15rem;
+  background-color: white;
+  color: #2263ae;
+  transform: scale(0.85) translate(0.2rem, 0.2rem);
+}
 header > .topbar > div .language {
   margin-right: 25px;
   display: flex;
