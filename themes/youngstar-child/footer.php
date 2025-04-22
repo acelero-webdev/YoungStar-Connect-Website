@@ -38,6 +38,9 @@
 		background-color: #AF3962;
 		font-family: "Arial", sans-serif;
 	}
+	#auraErrorMessage {
+		display: none;
+	}
 </style>
 
 <script type='text/javascript'>

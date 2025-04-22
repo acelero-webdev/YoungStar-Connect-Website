@@ -70,19 +70,23 @@
     
     </div>
 
-    <div class="container" style="margin: 8rem auto 5rem auto;">
-        <h2 class='single__article__heading'><?php echo $newsletter['heading'] ?></h2>
-        <p class='single__article__text' style="text-align: center;"><?php echo $newsletter['text'] ?></p>
-        <div class='single__article__img__container__alt'>
-            <?php if($newsletter['image']) { ?>
-                <a class='single__article__img__link' href='<?php echo $newsletter['image_link']['url']; ?>' target="_blank"> <img class='single__article__img--alt' src="<?php echo $newsletter['image']['url'] ?>" alt="<?php echo $newsletter['image']['alt'] ?>"/></a>
+    <?php if($newsletter) { ?>
+        <div class="container" style="margin: 8rem auto 5rem auto;">
+            <?php if($newsletter['heading'] && $newsletter['text']) { ?> 
+                <h2 class='single__article__heading'><?php echo $newsletter['heading'] ?></h2>
+                <p class='single__article__text' style="text-align: center;"><?php echo $newsletter['text'] ?></p>
             <?php } ?>
+            <div class='single__article__img__container__alt'>
+                <?php if($newsletter['image']) { ?>
+                    <a class='single__article__img__link' href='<?php echo $newsletter['image_link']['url']; ?>' target="_blank"> <img class='single__article__img--alt' src="<?php echo $newsletter['image']['url'] ?>" alt="<?php echo $newsletter['image']['alt'] ?>"/></a>
+                <?php } ?>
 
-            <?php if($newsletter['secondary_image']) { ?>
-                <a class='single__article__img__link' href='<?php echo $newsletter['secondary_image_link']['url']; ?>' target="_blank"><img class='single__article__img--alt' src="<?php echo $newsletter['secondary_image']['url'] ?>" alt="<?php echo $newsletter['secondary_image']['alt'] ?>"/></a>
-            <?php } ?>
+                <?php if($newsletter['secondary_image']) { ?>
+                    <a class='single__article__img__link' href='<?php echo $newsletter['secondary_image_link']['url']; ?>' target="_blank"><img class='single__article__img--alt' src="<?php echo $newsletter['secondary_image']['url'] ?>" alt="<?php echo $newsletter['secondary_image']['alt'] ?>"/></a>
+                <?php } ?>
+            </div>
         </div>
-    </div>
+    <?php } ?>
     
 </div>
 
