@@ -2,6 +2,7 @@
 <?php get_header(); ?>
 <?php $banner = get_field("banner"); ?>
 <?php $intro = get_field("intro"); ?>
+<?php $cardsHeading = get_field("cards_heading"); ?>
 <?php $aside = get_field("aside"); ?>
 
 <?php /* BANNER */ ?>
@@ -25,7 +26,7 @@
         </section>
 
         <main class="single__card">
-            <h2 class="single__card--heading">Self-Assessment Resources</h2>
+            <h2 class="single__card--heading"><?php echo $cardsHeading ?></h2>
             <div class="single__card__contacts">
                 <?php if(have_rows('cards')) { ?>
                     <?php while(have_rows('cards')) { ?>
