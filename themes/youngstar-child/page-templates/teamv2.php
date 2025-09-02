@@ -267,7 +267,7 @@ h4 {
        <div class="container">
         <div class="row">
             <div>
-                <h4>Northern Region <small>YoungStar Office – Rhinelander</small></h4>
+                <h4>Northern Region</h4>
             </div>
         </div>
     </div>  
@@ -310,7 +310,7 @@ h4 {
          <div class="container">
         <div class="row">
             <div>
-                <h4>Northeastern Region <small>YoungStar Office – Appleton</small></h4>
+                <h4>Northeastern Region</h4>
             </div>
         </div>
     </div>  
@@ -355,7 +355,7 @@ h4 {
     <div class="container">
         <div class="row">
             <div>
-                <h4>Southeastern Region <small>YoungStar Office – Milwaukee</small></h4>
+                <h4>Southeastern Region</h4>
             </div>
         </div>
     </div>  
@@ -397,7 +397,7 @@ h4 {
     <div class="container">
         <div class="row">
             <div>
-                <h4>Southern Region <small>YoungStar Office – Fitchburg</small></h4>
+                <h4>Southern Region</h4>
             </div>
         </div>
     </div>  
@@ -438,7 +438,7 @@ h4 {
      <div class="container">
         <div class="row">
             <div>
-                <h4>Western Region <small>YoungStar Office – Eau Claire</small></h4>
+                <h4>Western Region</h4>
             </div>
         </div>
     </div>  
