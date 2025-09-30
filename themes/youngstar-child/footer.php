@@ -1,4 +1,4 @@
-<?php $feedbackImage = wp_get_attachment_image(692, [200, 200], false, array('class' => 'content--svg' )); ?>
+<?php $feedbackImage = wp_get_attachment_image(701, [200, 200], false, array('class' => 'content--svg' )); ?>
 
 <footer>
     <div class="container-full">
@@ -10,7 +10,7 @@
 					</div>
 					
 					<?php // Feedback SVG ?>
-					<a class='content--link' href='https://www.surveymonkey.com/r/OnLine_Feedback_Form' target='_blank'>
+					<a class='content--link' href='https://docs.google.com/forms/d/e/1FAIpQLSd1oHaceGu1hFtddp-g6OQtDa_89rLD6iLAtg4BKwI_UQ1urQ/viewform?usp=dialog' target='_blank'>
 						<?php if($feedbackImage) {
 						 	echo $feedbackImage;
 						} ?>
