@@ -37,19 +37,35 @@
 
         &--form {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
 
-            /* SURVEY MONEKY CONTAINER */
-            .smcx-embed {
-                height: 600px !important;
-                overflow: scroll !important;
+            &__heading {
+                color: $red;
+                font-size: 2rem;
             }
 
-            & > p {
-                font-size: 2.4rem;
+            &__text {
+                font-size: 1rem;
                 text-align: center;
+            }
+
+            &__button {
+                background-color: $red;
+                color: #fff;
+                padding: 1rem 2rem;
+                border-radius: 0.4rem;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $red;
+                    text-decoration: underline;
+                    border: 2px solid $red;
+                    transition: all 0.3s;
+                }
             }
         }
     }

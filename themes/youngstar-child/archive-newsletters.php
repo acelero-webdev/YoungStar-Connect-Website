@@ -19,7 +19,10 @@
         </div>
         
         <div class='newsletter__archive__hero--form'>
-            <script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd94d4_2F5337WmKyXyyFb0ZZ3emqQB2fkXa90NU7p7JvsV.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>
+            <h2 class='newsletter__archive__hero--form__heading'>YoungStar Connect Chronicles</h2>
+            <h4 class='newsletter__archive__hero--form__sub-heading'>Opt-In or Opt-Out</h4>
+            <p class='newsletter__archive__hero--form__text'>Please use the link below to opt-in or opt-out of the YoungStar Connect Chronicles newsletter.</p>
+            <a class='newsletter__archive__hero--form__button' href='https://docs.google.com/forms/d/e/1FAIpQLSd6547I2NgJxnp5W3D6E1LpEuQ7H_Vzprmazvdum581msul_w/viewform' target="_blank">Update My Preference</a>
         </div>
     </main>
 

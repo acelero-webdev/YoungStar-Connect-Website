@@ -1363,18 +1363,32 @@ footer .content--svg {
 }
 .newsletter__archive__hero--form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* SURVEY MONEKY CONTAINER */
 }
-.newsletter__archive__hero--form .smcx-embed {
-  height: 600px !important;
-  overflow: scroll !important;
+.newsletter__archive__hero--form__heading {
+  color: #c9336d;
+  font-size: 2rem;
 }
-.newsletter__archive__hero--form > p {
-  font-size: 2.4rem;
+.newsletter__archive__hero--form__text {
+  font-size: 1rem;
   text-align: center;
+}
+.newsletter__archive__hero--form__button {
+  background-color: #c9336d;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+.newsletter__archive__hero--form__button:hover {
+  background-color: #fff;
+  color: #c9336d;
+  text-decoration: underline;
+  border: 2px solid #c9336d;
+  transition: all 0.3s;
 }
 .newsletter__archive__cards {
   display: grid;
